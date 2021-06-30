@@ -1,0 +1,10 @@
+<h2>Ejercicio 3</h2>
+
+<%= content_tag(:h4, "Comunicados de personas mayores de edad:") %>
+<% @comunicados_mayores_de_edad.each do |comunicado| %>
+	<%= content_tag(:ul) do %>
+		<%= content_tag(:li, comunicado) %>
+	<% end %>
+<% end %>
+
+<%= content_tag(:h4, "Total adjuntos: #{@adjuntos_total}") %>
